@@ -1,0 +1,34 @@
+[
+  {
+    "Key": "1",
+    "UnitCode": "ICT102",
+    "UnitName": "Introduction to Computer Science",
+    "TeachingPeriod": "S1",
+    "Loc": "Murdoch",
+    "TeachingPattern": "LT9"
+  },
+  {
+    "Key": "2",
+    "UnitCode": "ICT102",
+    "UnitName": "Introduction to Computer Science",
+    "TeachingPeriod": "S1",
+    "Loc": "Murdoch",
+    "TeachingPattern": "LT2"
+  },
+  {
+    "Key": "3",
+    "UnitCode": "ICT102",
+    "UnitName": "Introduction to Computer Science",
+    "TeachingPeriod": "S2",
+    "Loc": "Murdoch",
+    "TeachingPattern": "LT8"
+  },
+  {
+    "Key": "4",
+    "UnitCode": "ICT102",
+    "UnitName": "Introduction to Computer Science",
+    "TeachingPeriod": "S2",
+    "Loc": "Murdoch",
+    "TeachingPattern": "LT2"
+  }
+]
