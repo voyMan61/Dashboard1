@@ -8,6 +8,7 @@ import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 import ProgressSpinner from './ProgressSpinner'
+import Button from '@material-ui/core/Button';
 
 if (sessionStorage.getItem('patternCode')) {
     var PatterCode = sessionStorage.getItem('patternCode')
@@ -88,27 +89,32 @@ class SimpleSelect extends React.Component {
         const { classes } = this.props;
         if (this.state.patternLoaded === true) {
             return (
-                <form className={classes.root} autoComplete="off">
+                <div>
+                    <form className={classes.root} autoComplete="off">
 
-                    <FormControl className={classes.formControl}>
-                        <InputLabel htmlFor="age-auto-width">{PatterCode}</InputLabel>
-                        <Select
-                            value={this.state.age}
-                            onChange={this.handleChange}
-                            input={<Input name="age" id="age-auto-width" />}
-                            autoWidth
-                        >
+                        <FormControl className={classes.formControl}>
+                            <InputLabel htmlFor="age-auto-width">{PatterCode}</InputLabel>
+                            <Select
+                                value={this.state.age}
+                                onChange={this.handleChange}
+                                input={<Input name="age" id="age-auto-width" />}
+                                autoWidth
+                            >
 
-                            {this.state.patternData.map((data, index) =>
-                                <MenuItem component='a' href="/PatternDetail" value={data.code} key={index}>{data.code}</MenuItem>
-                            )}
+                                {this.state.patternData.map((data, index) =>
+                                    <MenuItem component='a' href="/PatternDetail" value={data.code} key={index}>{data.code}</MenuItem>
+                                )}
 
-                        </Select>
-                        <FormHelperText>Patter Code</FormHelperText>
-                    </FormControl>
+                            </Select>
+                            <FormHelperText>Pattern Lookup</FormHelperText>
+                        </FormControl>
 
 
-                </form>
+                    </form>
+                    <Button variant="contained" href="/CreatePattern" className={classes.button}>
+                        Create Pattern
+                    </Button>
+                </div>
             );
         } else {
             return (

@@ -1,0 +1,20 @@
+[
+    {
+        "index": 0,
+        "id": 1,
+        "name": "Staff 1",
+        "fraction": 0.3,
+        "supervision": 400.0,
+        "research": 0.0,
+        "service": 0.0,
+        "extra": 0.0,
+        "service_description": null,
+        "comments": "60% normally, on LSL for second half year. Supervision updated",
+        "offerings_taken": 1,
+        "teaching_hours": 259.6,
+        "target": 517.5,
+        "baseline_research": 103.5,
+        "baseline_service": 51.75,
+        "total_load": 814.85
+    }
+]
