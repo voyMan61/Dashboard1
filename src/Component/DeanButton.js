@@ -17,7 +17,7 @@ function ContainedButtons(props) {
     const { classes } = props;
     return (
         <div className="App">
-            <Button variant="contained" href="/Offering" className={classes.button}>
+            <Button variant="contained" href="/CreateOffering" className={classes.button}>
                 Offering Table
     </Button>
 

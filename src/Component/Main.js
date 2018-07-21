@@ -4,6 +4,7 @@ import Home from './Home'
 import Dashboard from './Dashboard'
 import PatternDetail from './PatternDetail'
 import CreatePattern from './CreatePattern'
+import CreateOffering from './CreateOffering'
 
 
 // The Main component renders one of the three provided
@@ -20,6 +21,7 @@ class Main extends React.Component {
       <Route exact path='/Dashboard' component={Dashboard}/>
       <Route exact path='/PatternDetail' component={PatternDetail}/>
       <Route exact path='/CreatePattern' component={CreatePattern}/>
+      <Route exact path='/CreateOffering' component={CreateOffering}/>
     </Switch>
   </main>
 )
